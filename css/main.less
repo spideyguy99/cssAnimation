@@ -1,0 +1,26 @@
+body{
+  margin: 0;
+  background-color: rebeccapurple;
+  height: 100%;
+  width: 100%;
+}
+.wrapper{
+  display: flex;
+  justify-content: center;
+}
+img{
+  height: 200px;
+  animation-name: spidey;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: relative;
+  transition-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@keyframes spidey {
+  0% {transform: rotate(0deg); left: 200px; top: 0;  animation-timing-function: ease-in}
+  50%{transform: rotate(45deg); left: 100px; top: 20px; animation-timing-function: ease-out;}
+  100% {transform: rotate(90deg); left: 0; top: 0; animation-timing-function: ease;}
+}
