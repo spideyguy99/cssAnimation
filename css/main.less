@@ -2,7 +2,7 @@ body{
   margin: 0;
   background-color: rebeccapurple;
   height: 100%;
-  width: 100%;
+  width: 90%;
 }
 .wrapper{
   display: flex;
@@ -11,16 +11,14 @@ body{
 img{
   height: 200px;
   animation-name: spidey;
-  animation-duration: 1s;
+  animation-duration: 1.2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   position: relative;
-  transition-timing-function: linear;
-  animation-timing-function: linear;
 }
 
 @keyframes spidey {
   0% {transform: rotate(0deg); left: 200px; top: 0;  animation-timing-function: ease-in}
-  50%{transform: rotate(45deg); left: 100px; top: 20px; animation-timing-function: ease-out;}
+  50%{transform: rotate(45deg); left: 100px; top: 30px; animation-timing-function: ease-out;}
   100% {transform: rotate(90deg); left: 0; top: 0; animation-timing-function: ease;}
 }
